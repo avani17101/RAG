@@ -23,7 +23,6 @@ def create_vector_db(url,save_path, embeddings):
     ## Text Splitting - Chunking
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=256, chunk_overlap=20) ##adjust chunk overlap as needed
     chunks = text_splitter.split_documents(docs)
-
     
     ## Vector Store
     vectorstore = Chroma.from_documents(chunks, embeddings, persist_directory=save_path)
@@ -35,7 +34,6 @@ def create_vector_db(url,save_path, embeddings):
 def load_from_db(path, embeddings):
     return Chroma(persist_directory=path, embedding_function=embeddings)
 
-        
 
 def load_model(model_name, kwargs):
     llm = HuggingFaceHub(
