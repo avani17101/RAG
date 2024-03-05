@@ -5,14 +5,14 @@ This repository tests code on a small scraped-website sample.
 
 ## Instructions to set-up
 * Installation
-- Using conda (recommended)
-```
-conda create -n RAG python3
-conda activate RAG
-conda install -file requirements.txt
-```
-- Using pip
-```pip install -r requirements.txt```
+    - Using conda (recommended)
+    ```
+    conda env create -f environment.yml
+    ```
+    - Using pip
+    ```
+    pip install -r requirements.txt
+    ```
 * Setting-up HuggingFace Access Token
     - Log in to [HuggingFace.co](https://huggingface.co/)
     - Click on your profile icon at the top-right corner, then choose [“Settings.”](https://huggingface.co/settings/)
