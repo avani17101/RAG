@@ -1,0 +1,7 @@
+name: RAG
+dependencies:
+  - python=3.12.2
+  - anaconda
+  - pip
+  - pip:
+    - -r requirements.txt
