@@ -6,8 +6,6 @@ This repository tests code on a small scraped-website sample.
 ## Repository Structure
 ```
 └─ src
-   ├─ __pycache__
-   │  └─ helpers.cpython-312.pyc
    ├─ helpers.py
    └─ main.py 
 ├─ README.md
